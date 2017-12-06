@@ -10,7 +10,7 @@
 
         <fragment
             android:id="@+id/webfragment"
-            android:name="com.mj.pkshi.iwebview.IWebviewFragment"
+            android:name="com.mj.kuaile8.iwebview.IWebviewFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 

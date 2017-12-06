@@ -16,7 +16,7 @@
             android:scaleType="fitXY"
             android:src="@drawable/scrollview_header" />
 
-        <com.mj.pkshi.views.PullScrollView
+        <com.mj.kuaile8.views.PullScrollView
             android:id="@+id/scroll_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -243,7 +243,7 @@
 
                 </LinearLayout>
             </LinearLayout>
-        </com.mj.pkshi.views.PullScrollView>
+        </com.mj.kuaile8.views.PullScrollView>
         <LinearLayout
             android:id="@+id/layout_login"
             android:layout_width="wrap_content"
