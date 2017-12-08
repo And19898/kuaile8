@@ -116,6 +116,7 @@ public class WXMeiwenActivity extends UIActivity<LayoutListviewBinding> implemen
 //        Intent intent = new Intent(context, XiaohuaDetailActivity.class);
 //        intent.putExtra("data", (Serializable) mAdapter.getData().get(position));
 //        startActivity(intent);
+        WebViewActivity.load(context, mAdapter.getData().get(position).getUrl(), true);
     }
 
     @Override

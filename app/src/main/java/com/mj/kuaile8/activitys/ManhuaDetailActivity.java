@@ -1,6 +1,8 @@
 package com.mj.kuaile8.activitys;
 
+import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
@@ -65,10 +67,12 @@ public class ManhuaDetailActivity extends UIActivity<ActivityManhuaDetailBinding
         databinding.tvMhTime.setText(detail.getShowapi_res_body().getItem().getTime());
         List<String> imgs = detail.getShowapi_res_body().getItem().getImgList();
         ImageView imageView;
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         for (String img : imgs) {
             imageView = new ImageView(context);
+            imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
             Glide.with(this).load(img).into(imageView);
-            databinding.layoutMahua.addView(imageView);
+            databinding.layoutMahua.addView(imageView, params);
         }
     }
 }

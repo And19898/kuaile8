@@ -8,8 +8,8 @@ android {
         applicationId "com.mj.kuaile8"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 1206
-        versionName "1.0.1.1206"
+        versionCode 1208
+        versionName "1.0.1.1208"
         resValue "string", "login", "登陆"
         resValue "string", "name", "用户名"
         resValue "string", "password", "密码"
